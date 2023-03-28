@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .pic-container div:hover {
+            border: 3px solid blue;
+            width: 50px;
+
+        } 
+    </style>
+    <script>
+        function GetOver(picName) {
+            var pic = document.getElementById("photo");
+            switch(picName)
+            {
+                case 1:
+                    pic.src="../public/image/realme-1.webp";
+                    break;
+                    case 2:
+                        pic.src="../public/image/realme-2.webp";
+                        break;
+                        case 3:
+                            pic.src="../public/image/realme-3.webp";
+                            break;
+                            case 4:
+                                pic.src="../public/image/realme-4.webp";
+                                break;
+                                case 5:
+                                    pic.src="../public/image/realme-5.webp";
+                                    break;
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="pic-container">
+        <div onmouseover="GetOver(1)">
+        <img src="../public/image/realme-1.webp" width="50px" height="50px">
+        </div>
+        <div onmouseover="GetOver(2)">
+        <img src="../public/image/realme-2.webp" width="50px" height="50px">
+        </div>
+        <div onmouseover="GetOver(3)">
+        <img src="../public/image/realme-3.webp" width="50px" height="50px">
+        </div>
+        <div onmouseover="GetOver(4)">
+        <img src="../public/image/realme-4.webp" width="50px" height="50px">
+        </div>
+        <div onmouseover="GetOver(5)">
+        <img src="../public/image/realme-5.webp" width="50px" height="50px">
+        </div>
+    </div>
+    <div>
+        <img src="../public/image/realme-7.webp" id="photo" style="border: 2px solid black;">
+    </div>
+</body>
+</html>
